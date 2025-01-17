@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>BBQ Specials</title>
+</head>
+<body>
+    <div class="loader"></div>
+    <div class="burgerHeader">
+        <a class="arrow" href="./index.html">
+            <img id="backArrow" src="./icons/arrow.png">
+        </a>
+        <h2>BBQ Specials</h2>
+    </div>
+    <div class="burgers">
+
+    <div class="Burger">
+        <div class="burgerAndHeart">
+            <img id="vegBurger" src="./images/food items/5.png">
+            <!-- <img id="heartNo" src="./icons/heartNo.png"> -->
+        </div>
+        <div class="burgerBottom">
+            <div class="burgerBottomRight">
+                <img class="dot" src="./icons/nonvegDot.jpeg">
+                <div class="nameAndPrice">
+                    <p class="name">Chicken Tikka</p>
+                    <p class="price">Rs.118</p>
+                </div>
+            </div>
+            <div class="burgerBottomLeft">
+                <!-- <button id="add">Add +</button> -->
+            </div>
+        </div>
+    </div>
+    <div class="Burger">
+        <div class="burgerAndHeart">
+            <img id="vegBurger" src="./images/food items/9.png">
+            <!-- <img id="heartNo" src="./icons/heartNo.png"> -->
+        </div>
+        <div class="burgerBottom">
+            <div class="burgerBottomRight">
+                <img class="dot" src="./icons/nonvegDot.jpeg">
+                <div class="nameAndPrice">
+                    <p class="name">Chicken Hariyali</p>
+                    <p class="price">Rs.128</p>
+                </div>
+            </div>
+            <div class="burgerBottomLeft">
+                <!-- <button id="add">Add +</button> -->
+            </div>
+        </div>
+    </div>
+    <div class="Burger">
+        <div class="burgerAndHeart">
+            <img id="vegBurger" src="./images/food items/6.png">
+            <!-- <img id="heartNo" src="./icons/heartNo.png"> -->
+        </div>
+        <div class="burgerBottom">
+            <div class="burgerBottomRight">
+                <img class="dot" src="./icons/nonvegDot.jpeg">
+                <div class="nameAndPrice">
+                    <p class="name">Chicken Leg Piece</p>
+                    <p class="price">Rs.138</p>
+                </div>
+            </div>
+            <div class="burgerBottomLeft">
+                <!-- <button id="add">Add +</button> -->
+            </div>
+        </div>
+    </div>
+    <div class="Burger">
+        <div class="burgerAndHeart">
+            <img id="vegBurger" src="./images/food items/7.png">
+            <img id="heartNo" src="./icons/heartNo.png">
+        </div>
+        <div class="burgerBottom">
+            <div class="burgerBottomRight">
+                <img class="dot" src="./icons/nonvegDot.jpeg">
+                <div class="nameAndPrice">
+                    <p class="name">Chicken Lollipop</p>
+                    <p class="price">Rs.148</p>
+                </div>
+            </div>
+            <div class="burgerBottomLeft">
+                <!-- <button id="add">Add +</button> -->
+            </div>
+        </div>
+    </div>
+    <div class="Burger">
+        <div class="burgerAndHeart">
+            <img id="vegBurger" src="./images/food items/8.png">
+            <img id="heartNo" src="./icons/heartNo.png">
+        </div>
+        <div class="burgerBottom">
+            <div class="burgerBottomRight">
+                <div class="dots">
+                    <img class="dot" src="./icons/nonvegDot.jpeg">
+                </div>
+                <div class="nameAndPrice">
+                    <p class="name">Chicken Wings</p>
+                    <p class="price">Rs.158</p>
+                </div>
+            </div>
+            <div class="burgerBottomLeft">
+                <!-- <button id="add">Add +</button> -->
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <div class="footer">
+        <a class="footerIcon" href="./bbq.html">
+            <img class="footerImage" id="homeImage" src="./icons/chicken-leg (1).png">
+        </a>
+        <a class="footerIcon" href="./tawaFry.html">
+            <img class="footerImage" id="discountImage" src="./icons/fried-fish.png">
+        </a>
+        <a class="footerIcon" href="./riceDelights.html">
+            <img class="footerImage" id="wishlistImage" src="./icons/rice-bowl.png">
+        </a>
+        <a class="footerIcon" href="./vegetarian.html">
+            <img class="footerImage" id="cartImage" src="./icons/brochette.png">
+        </a>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.querySelector(".loader");
+
+            loader.classList.add("loader--hidden");
+
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild(document.querySelector(".loader"));
+            })
+        })
+
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+</html>

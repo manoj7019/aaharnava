@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Aaharnava.com</title>
+</head>
+<body>
+    <div class="loader"></div>
+    <div class="header">
+        <div class="nameAndGreet">
+            <!-- <h3>Hi Manoj,</h3> -->
+            <h1> <span>Aaharnava</span> Delights!</h1>
+        </div>
+        <!-- <a href="./profile.html"><img id="profileIcon" src="./icons/profile.png"></a> -->
+    </div>
+    
+    <div class="offer">
+        <!-- <h2>Today's offer</h2> -->
+        <img id="offerImage" src="./images/food items/25.png">
+    </div>
+    <h2 class="menuHeadline">Menu</h2>
+    <div class="menu">
+        <div class="menuItem">
+            <a href="./bbq.html">
+                <img id="menuImage" src="./images/food items/3.png">
+                <p class="item-name">BBQ Specials</p>
+            </a>
+        </div>
+        <div class="menuItem">
+            <a href="./tawaFry.html">
+                <img id="menuImage" src="./images/food items/4.png">
+                <p class="item-name">Tawa Fry</p>
+            </a>
+        </div>
+        <div class="menuItem">
+            <a href="./riceDelights.html">
+            <img id="menuImage" src="./images/food items/2.png">
+            <p class="item-name">Rice Delights</p>
+            </a>
+        </div>
+        <div class="menuItem">
+            <a href="./vegetarian.html">
+            <img id="menuImage" src="./images/food items/1.png">
+            <p class="item-name">Vegetarian</p>
+            </a>
+        </div>
+        <!-- <div class="menuItem">
+            <a href="./rolls.html">
+            <img id="menuImage" src="https://campa-cola.in/images/products/campa-orange.png">
+            <p class="item-name">Campa</p>
+            </a>
+        </div> -->
+        <!--<div class="menuItem">
+            <a>
+            <img id="menuImage" src="https://i.pinimg.com/originals/70/59/4d/70594def01b2f1ec407a8a730e668926.png">
+            <p class="item-name">Bindu</p>
+            </a>
+        </div> -->
+        <!-- <div class="menuItem">
+            <a>
+            <img id="menuImage" src="./images/food items/momos.png">
+            <p class="item-name">Momos</p>
+            </a>
+        </div>
+        <div class="menuItem">
+            <a>
+            <img id="menuImage" src="./images/food items/fries n more.png">
+            <p class="item-name">Fries n' more</p>
+            </a>
+        </div>
+        <div class="menuItem">
+            <img id="menuImage" src="./images/food items/burger.png">
+            <p class="item-name">Fries n' more</p>
+        </div> -->
+    
+    </div>
+    <br>
+
+    <div class="footer">
+        <a class="footerIcon" href="./bbq.html">
+            <img class="footerImage" id="homeImage" src="./icons/chicken-leg.png">
+        </a>
+        <a class="footerIcon" href="./tawaFry.html">
+            <img class="footerImage" id="discountImage" src="./icons/fried-fish.png">
+        </a>
+        <a class="footerIcon" href="./riceDelights.html">
+            <img class="footerImage" id="wishlistImage" src="./icons/rice-bowl.png">
+        </a>
+        <a class="footerIcon" href="./vegetarian.html">
+            <img class="footerImage" id="cartImage" src="./icons/brochette.png">
+        </a>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.querySelector(".loader");
+
+            loader.classList.add("loader--hidden");
+
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild(document.querySelector(".loader"));
+            })
+        })
+
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+</html>
